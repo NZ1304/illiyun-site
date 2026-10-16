@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Illiyun — عِلِّيُّون</title>
+<meta http-equiv="refresh" content="2; url=fr/">
+<script>
+// Langue du navigateur : arabe, anglais, sinon français.
+(function () {
+  var l = (navigator.language || "fr").slice(0, 2);
+  location.replace(l === "ar" ? "ar/" : l === "en" ? "en/" : "fr/");
+})();
+</script>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<main><div class="wrap"><p><a href="fr/" lang="fr">Français</a> <a href="ar/" lang="ar">العربية</a> <a href="en/" lang="en">English</a></p></div></main>
+</body>
+</html>

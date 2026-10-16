@@ -1,0 +1,321 @@
+/* Illiyun — site vitrine. Couleurs et polices de l'app. */
+
+@font-face {
+  font-family: "Uthmanic Hafs";
+  src: url("fonts/UthmanicHafs.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Naskh Arabic";
+  src: url("fonts/NotoNaskhArabic-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Serif 4";
+  src: url("fonts/source-serif-4-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Serif 4";
+  src: url("fonts/source-serif-4-latin-400-italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Serif 4";
+  src: url("fonts/source-serif-4-latin-600-normal.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+
+:root {
+  --malachite-deep: #0b5d4b;
+  --malachite: #087f68;
+  --malachite-light: #5fb89a;
+  --ivory: #faf9f4;
+  --sand: #e9e2d2;
+  --ink: #101c19;
+  --ink-soft: #5e6b66;
+  --gold: #b8a06a;
+  --gold-dark: #7a6536;
+  --page: var(--ivory);
+  --text: var(--ink);
+  --text-soft: var(--ink-soft);
+  --link: var(--malachite);
+  --heading: var(--malachite-deep);
+  --rule: var(--sand);
+  --latin: "Source Serif 4", Georgia, serif;
+  --arabic: "Noto Naskh Arabic", "Geeza Pro", serif;
+  --quran: "Uthmanic Hafs", "Noto Naskh Arabic", serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page: #101c19;
+    --text: #f5f1e8;
+    --text-soft: #a9b8b2;
+    --link: var(--malachite-light);
+    --heading: #d8c5a0;
+    --rule: #16443b;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--text);
+  font-family: var(--latin);
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+:lang(ar) body,
+body:lang(ar) {
+  font-family: var(--arabic);
+  line-height: 1.9;
+}
+
+a {
+  color: var(--link);
+  text-underline-offset: 0.2em;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* ── Barre du haut : nom + langues ── */
+
+.top {
+  background: var(--malachite-deep);
+  color: var(--ivory);
+}
+
+.top .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.brand {
+  color: var(--ivory);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.langs {
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.95rem;
+}
+
+.langs a {
+  color: var(--ivory);
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.langs a[aria-current="true"] {
+  opacity: 1;
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-decoration-thickness: 2px;
+}
+
+.langs a:hover {
+  opacity: 1;
+}
+
+/* ── Bandeau : le verset qui a donné son nom à l'app ── */
+
+.hero {
+  background: var(--malachite-deep);
+  color: var(--ivory);
+  padding: 2.5rem 0 3.5rem;
+  text-align: center;
+}
+
+.verse {
+  margin: 0 auto;
+  max-width: 34rem;
+  font-family: var(--quran);
+  font-size: clamp(2rem, 8vw, 3.1rem);
+  line-height: 2.1;
+  color: #e6d7ae;
+  direction: rtl;
+}
+
+.verse .w {
+  transition: opacity 900ms ease-out, filter 900ms ease-out;
+}
+
+.verse.pending .w {
+  opacity: 0;
+  filter: blur(4px);
+}
+
+.verse .w.on {
+  opacity: 1;
+  filter: none;
+}
+
+.verse .mark {
+  color: var(--gold);
+}
+
+.verse-ref {
+  margin: 0.25rem 0 0;
+  font-size: 0.95rem;
+  color: rgba(250, 249, 244, 0.7);
+}
+
+.hero h1 {
+  margin: 2.25rem 0 0.5rem;
+  font-size: clamp(1.75rem, 6vw, 2.4rem);
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.hero .lead {
+  margin: 0 auto;
+  max-width: 30rem;
+  color: rgba(250, 249, 244, 0.88);
+}
+
+.hero .status {
+  margin: 1.5rem 0 0;
+  font-size: 0.95rem;
+  color: #e6d7ae;
+}
+
+/* ── Contenu ── */
+
+main {
+  padding: 3rem 0 2rem;
+}
+
+h2 {
+  margin: 2.5rem 0 0.5rem;
+  color: var(--heading);
+  font-size: 1.45rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+main > .wrap > h2:first-child,
+main > .wrap > h1:first-child {
+  margin-top: 0;
+}
+
+.page-title {
+  margin: 0 0 0.25rem;
+  color: var(--heading);
+  font-size: clamp(1.7rem, 5vw, 2.1rem);
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.updated {
+  margin: 0 0 2rem;
+  color: var(--text-soft);
+  font-size: 0.95rem;
+}
+
+p,
+ul,
+ol {
+  margin: 0 0 1rem;
+}
+
+ul,
+ol {
+  padding-inline-start: 1.25rem;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+
+.path {
+  font-style: italic;
+}
+
+/* Pas d'italique sur l'arabe (faux italique penché) */
+.path:lang(ar),
+:lang(ar) .path {
+  font-family: var(--arabic);
+  font-style: normal;
+  color: var(--heading);
+}
+
+.note {
+  color: var(--text-soft);
+  font-size: 1rem;
+}
+
+/* Séparateur : étoile à huit branches, une seule fois par page */
+.star {
+  display: block;
+  width: 28px;
+  height: 28px;
+  margin: 2.75rem auto;
+  color: var(--gold);
+}
+
+/* ── Pied de page ── */
+
+footer {
+  border-top: 1px solid var(--rule);
+  padding: 1.5rem 0 2.5rem;
+  color: var(--text-soft);
+  font-size: 0.95rem;
+}
+
+footer nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin: 0 0 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+footer .credits {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .verse .w {
+    transition: none;
+  }
+}
