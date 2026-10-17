@@ -230,7 +230,8 @@ d'audience, ni revente de données.</p>
 <h2>Sans compte</h2>
 <ul>
 <li><strong>Sur votre téléphone :</strong> réglages, signets, dernière page lue,
-heure du rappel quotidien. Ces données ne quittent pas l'appareil et
+heure du rappel quotidien, suivi de la mémorisation (versets marqués, dates de
+révision). Ces données ne quittent pas l'appareil et
 disparaissent quand vous désinstallez l'app.</li>
 <li><strong>Téléchargements :</strong> l'app télécharge des fichiers (pages du
 mushaf Warsh, tafsirs, dictionnaire, polices du mushaf) depuis GitHub et Quran
@@ -257,7 +258,8 @@ autre téléphone. Il conserve :</p>
 <ul>
 <li>votre adresse e-mail, qui sert à vous connecter avec un code à usage
 unique (pas de mot de passe) ;</li>
-<li>vos réglages, vos signets et vos dernières pages lues, avec leur date de
+<li>vos réglages, vos signets, vos dernières pages lues et votre suivi de
+mémorisation (état des versets, dates de révision des pages), avec leur date de
 modification.</li>
 </ul>
 <p>Ces données sont hébergées par Supabase, dans l'Union européenne (Francfort,
@@ -300,7 +302,7 @@ sale of data.</p>
 <h2>Without an account</h2>
 <ul>
 <li><strong>On your phone:</strong> settings, bookmarks, last page read, daily
-reminder time. This data never leaves the device and is removed when you
+reminder time, memorisation tracking (marked verses, review dates). This data never leaves the device and is removed when you
 uninstall the app.</li>
 <li><strong>Downloads:</strong> the app downloads files (Warsh mushaf pages,
 tafsirs, dictionary, mushaf fonts) from GitHub and Quran Foundation. As with any
@@ -326,8 +328,8 @@ stores:</p>
 <ul>
 <li>your email address, used to sign in with a one-time code (no
 password);</li>
-<li>your settings, bookmarks and last pages read, with the time they
-changed.</li>
+<li>your settings, bookmarks, last pages read and memorisation tracking (verse
+states, page review dates), with the time they changed.</li>
 </ul>
 <p>This data is hosted by Supabase in the European Union (Frankfurt, Germany).
 Sign-in codes are sent by an email delivery service. The data is kept while the
@@ -368,7 +370,7 @@ date.</p>
 <h2>من غير حساب</h2>
 <ul>
 <li><strong>على هاتفك:</strong> الإعدادات، والعلامات، وآخر صفحة قرأتها، ووقت
-التذكير اليومي. لا تغادر هذه المعطيات الجهاز، وتُمحى عند حذف التطبيق.</li>
+التذكير اليومي، ومتابعة الحفظ (الآيات المعلَّمة ومواعيد المراجعة). لا تغادر هذه المعطيات الجهاز، وتُمحى عند حذف التطبيق.</li>
 <li><strong>التنزيلات:</strong> ينزّل التطبيق ملفات (صفحات مصحف ورش، والتفاسير،
 والمعجم، وخطوط المصحف) من GitHub ومن Quran Foundation. وكما في أي صفحة ويب،
 ترى هذه الخدمات عنوان IP لهاتفك. ولا يُرسَل أي مُعرِّف.</li>
@@ -388,7 +390,8 @@ date.</p>
 <ul>
 <li>بريدك الإلكتروني، ويُستعمل للدخول برمز يُستعمل مرة واحدة (دون كلمة
 مرور)؛</li>
-<li>إعداداتك وعلاماتك وآخر صفحاتك، مع تاريخ تعديلها.</li>
+<li>إعداداتك وعلاماتك وآخر صفحاتك ومتابعة حفظك (حالة الآيات ومواعيد مراجعة
+الصفحات)، مع تاريخ تعديلها.</li>
 </ul>
 <p>تُستضاف هذه المعطيات لدى Supabase في الاتحاد الأوروبي (فرانكفورت، ألمانيا).
 وتُرسَل رموز الدخول عبر خدمة لإرسال البريد. وتُحفظ ما دام الحساب قائمًا، وتُمحى
@@ -423,8 +426,8 @@ def delete_account(lang: str) -> tuple[str, str]:
 <p class="updated">Mise à jour : {UPDATED['fr']}</p>
 
 <p>Le compte Illiyun est facultatif. Le supprimer efface définitivement, sur nos
-serveurs : votre adresse e-mail, vos réglages synchronisés, vos signets et vos
-dernières pages lues. Rien n'est conservé.</p>
+serveurs : votre adresse e-mail, vos réglages synchronisés, vos signets, vos
+dernières pages lues et votre suivi de mémorisation. Rien n'est conservé.</p>
 
 <h2>Depuis l'application</h2>
 <ol>
@@ -456,8 +459,8 @@ l'application.</p>
 <p class="updated">Updated: {UPDATED['en']}</p>
 
 <p>An Illiyun account is optional. Deleting it permanently erases, on our
-servers: your email address, your synced settings, your bookmarks and your last
-pages read. Nothing is kept.</p>
+servers: your email address, your synced settings, your bookmarks, your last
+pages read and your memorisation tracking. Nothing is kept.</p>
 
 <h2>From the app</h2>
 <ol>
@@ -483,7 +486,7 @@ even without an account. They are removed when you uninstall the app.</p>
 <p class="updated">آخر تحديث: {UPDATED['ar']}</p>
 
 <p>الحساب في عِلِّيُّون اختياري. وحذفه يمحو نهائيًا من خوادمنا: بريدك الإلكتروني،
-وإعداداتك المتزامنة، وعلاماتك، وآخر صفحاتك. ولا يُحتفظ بشيء.</p>
+وإعداداتك المتزامنة، وعلاماتك، وآخر صفحاتك، ومتابعة حفظك. ولا يُحتفظ بشيء.</p>
 
 <h2>من التطبيق</h2>
 <ol>
