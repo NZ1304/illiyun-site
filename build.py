@@ -243,6 +243,12 @@ téléphone, sans serveur.</li>
 <li><strong>Suivi de la récitation</strong> (si la fonction est disponible) : la
 voix est traitée par le service de reconnaissance vocale de votre téléphone
 (Google sur Android). Illiyun n'enregistre pas l'audio.</li>
+<li><strong>Ville du ciel de l'accueil :</strong> le ciel suit le soleil de votre
+ville. Par défaut, elle est déduite du fuseau horaire du téléphone, sans rien
+demander. Vous pouvez aussi choisir votre ville dans une liste, ou appuyer sur
+« Me localiser » : la position approximative du téléphone est alors lue une
+fois, pour trouver la ville la plus proche. Seule la ville est gardée, sur le
+téléphone ; la position n'est envoyée nulle part.</li>
 </ul>
 
 <h2>Avec un compte (facultatif)</h2>
@@ -307,6 +313,11 @@ no server.</li>
 <li><strong>Recitation follow-along</strong> (where available): your voice is
 processed by your phone's speech recognition service (Google on Android).
 Illiyun does not record the audio.</li>
+<li><strong>City of the home sky:</strong> the sky follows the sun of your city.
+By default it is inferred from the phone's time zone, without asking anything.
+You can also choose your city from a list, or tap “Locate me”: the phone's
+approximate position is then read once, to find the nearest city. Only the city
+is kept, on the phone; the position is sent nowhere.</li>
 </ul>
 
 <h2>With an account (optional)</h2>
@@ -366,6 +377,10 @@ date.</p>
 <li><strong>التذكير اليومي:</strong> إشعار مبرمج على الهاتف نفسه، دون خادم.</li>
 <li><strong>متابعة التلاوة</strong> (إن كانت متاحة): يعالج صوتَك نظامُ التعرّف
 على الكلام في هاتفك (Google على أندرويد). ولا يسجّل عِلِّيُّون الصوت.</li>
+<li><strong>مدينة سماء الصفحة الرئيسية:</strong> تتبع السماء شمس مدينتك. وتُستنتج
+افتراضيًا من المنطقة الزمنية للهاتف دون طلب أي شيء. ويمكنك أيضًا اختيار مدينتك من
+قائمة، أو الضغط على «حدِّد موقعي»: فيُقرأ الموقع التقريبي للهاتف مرة واحدة لمعرفة
+أقرب مدينة. ولا تُحفظ إلا المدينة، على الهاتف؛ ولا يُرسَل الموقع إلى أي جهة.</li>
 </ul>
 
 <h2>مع حساب (اختياري)</h2>
