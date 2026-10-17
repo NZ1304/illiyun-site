@@ -24,9 +24,9 @@ CONTROLLER = {
 # Numéro de déclaration CNDP : None tant qu'il n'existe pas.
 CNDP_DECLARATION = None
 UPDATED = {
-    "fr": "16 octobre 2026",
-    "en": "16 October 2026",
-    "ar": "16 أكتوبر 2026",
+    "fr": "17 octobre 2026",
+    "en": "17 October 2026",
+    "ar": "17 أكتوبر 2026",
 }
 
 LANGS = ["fr", "ar", "en"]
