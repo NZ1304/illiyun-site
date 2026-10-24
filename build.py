@@ -17,16 +17,16 @@ CONTACT_EMAIL = "illiyun.app@gmail.com"
 PLAY_URL = None
 # Responsable du traitement (loi 09-08) : à compléter (nom, ville).
 CONTROLLER = {
-    "fr": "l'éditeur de l'application Illiyun (Maroc)",
-    "en": "the publisher of the Illiyun app (Morocco)",
-    "ar": "ناشر تطبيق عِلِّيُّون (المغرب)",
+    "fr": "Noure ZENATI, éditeur de l'application Illiyun (Rabat, Maroc)",
+    "en": "Noure ZENATI, publisher of the Illiyun app (Rabat, Morocco)",
+    "ar": "Noure ZENATI، ناشر تطبيق عِلِّيُّون (الرباط، المغرب)",
 }
 # Numéro de déclaration CNDP : None tant qu'il n'existe pas.
 CNDP_DECLARATION = None
 UPDATED = {
-    "fr": "17 octobre 2026",
-    "en": "17 October 2026",
-    "ar": "17 أكتوبر 2026",
+    "fr": "24 octobre 2026",
+    "en": "24 October 2026",
+    "ar": "24 أكتوبر 2026",
 }
 
 LANGS = ["fr", "ar", "en"]
