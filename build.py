@@ -12,7 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).parent
 
 # ── Réglages ─────────────────────────────────────────────────────────────
-CONTACT_EMAIL = "illiyun.app@gmail.com"
+CONTACT_EMAIL = "contact@illiyun.app"
 # Lien Google Play : None tant que l'app n'est pas publiée.
 PLAY_URL = None
 # Responsable du traitement (loi 09-08) : à compléter (nom, ville).
@@ -24,9 +24,9 @@ CONTROLLER = {
 # Numéro de déclaration CNDP : None tant qu'il n'existe pas.
 CNDP_DECLARATION = None
 UPDATED = {
-    "fr": "24 octobre 2026",
-    "en": "24 October 2026",
-    "ar": "24 أكتوبر 2026",
+    "fr": "25 octobre 2026",
+    "en": "25 October 2026",
+    "ar": "25 أكتوبر 2026",
 }
 
 LANGS = ["fr", "ar", "en"]
