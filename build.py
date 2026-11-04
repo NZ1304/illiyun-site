@@ -24,9 +24,9 @@ CONTROLLER = {
 # Numéro de déclaration CNDP : None tant qu'il n'existe pas.
 CNDP_DECLARATION = None
 UPDATED = {
-    "fr": "25 octobre 2026",
-    "en": "25 October 2026",
-    "ar": "25 أكتوبر 2026",
+    "fr": "4 novembre 2026",
+    "en": "4 November 2026",
+    "ar": "4 نوفمبر 2026",
 }
 
 LANGS = ["fr", "ar", "en"]
@@ -113,23 +113,34 @@ HOME = {
         "play": "Télécharger sur Google Play",
         "body": f"""
 <h2>Lire</h2>
-<p>Le mushaf de Médine en Hafs, et le mushaf du Complexe du Roi Fahd en Warsh,
+<p>Le mushaf de Médine en Hafs et le mushaf du Complexe du Roi Fahd en Warsh,
 avec la mise en page exacte de chaque page. Chaque mot se touche : un appui le
 marque, un double appui ouvre sa définition, un appui long marque tout le
 verset.</p>
-<p>Pour le confort des yeux : grand texte en Warsh, trait plus épais, contraste
-élevé, mode sombre, et en Hafs les couleurs du tajwīd.</p>
+<p>Pour le confort des yeux : zoom à deux doigts ou bouton loupe, grand texte en
+Warsh, contraste élevé, mode sombre, couleurs du tajwīd en Hafs, et un mode
+daltonien.</p>
+
+<h2>Écouter</h2>
+<p>Les grands récitateurs, verset par verset ou en continu, avec la page qui
+suit la lecture. Répétition d'un passage pour apprendre, vitesse réglable,
+minuterie de sommeil, et téléchargement pour écouter sans connexion.</p>
 
 <h2>Comprendre</h2>
-<p>Pour chaque verset, un tafsir au choix (al-Muyassar, as-Saʿdī, Ibn Kathīr,
-al-Mukhtaṣar en français et en anglais) et des traductions en français et en
-anglais. Le verset s'affiche à sa place dans le mushaf, et chaque mot mène à
-sa traduction mot à mot, à sa racine et à l'article d'al-Mufradāt ou de Lane.</p>
+<p>Pour chaque verset, des tafsirs et des traductions en plusieurs langues
+(arabe, français, anglais, espagnol, italien, néerlandais, allemand). Chaque mot
+mène à sa traduction mot à mot, à sa racine et au Lexique Illiyun, avec les
+autres mots de la même racine.</p>
+
+<h2>Mémoriser</h2>
+<p>Marquez chaque mot su ou difficile, testez-vous en masquant le texte,
+suivez votre progression verset par verset et retrouvez vos difficultés.</p>
 
 <h2>Garder le fil</h2>
-<p>Reprise de la lecture là où vous vous êtes arrêté, signets de pages et de
-versets, rappel quotidien. Un compte est facultatif : il sert seulement à
-retrouver vos réglages et vos signets sur un autre téléphone.</p>
+<p>Reprise de la lecture là où vous vous êtes arrêté, marque-pages en couleur,
+rappel quotidien, et partage d'un verset en image. Un compte est facultatif : il
+sert seulement à retrouver vos réglages et votre suivi sur un autre
+téléphone.</p>
 
 {STAR}
 
@@ -149,22 +160,31 @@ explique comment.</p>
         "play": "Get it on Google Play",
         "body": f"""
 <h2>Read</h2>
-<p>The Madinah mushaf in Hafs, and the King Fahd Complex mushaf in Warsh, with
+<p>The Madinah mushaf in Hafs and the King Fahd Complex mushaf in Warsh, with
 the exact layout of every page. Every word responds to touch: a tap marks it, a
 double tap opens its definition, a long press marks the whole verse.</p>
-<p>For tired eyes: large text in Warsh, thicker strokes, high contrast, dark
-mode, and tajweed colours in Hafs.</p>
+<p>For tired eyes: pinch zoom or a magnifier button, large text in Warsh, high
+contrast, dark mode, tajweed colours in Hafs, and a colour-blind mode.</p>
+
+<h2>Listen</h2>
+<p>The great reciters, verse by verse or continuously, with the page following
+along. Repeat a passage to learn it, adjust the speed, set a sleep timer, and
+download to listen offline.</p>
 
 <h2>Understand</h2>
-<p>For each verse, a tafsir of your choice (al-Muyassar, as-Saʿdī, Ibn Kathīr,
-al-Mukhtaṣar in English and French) and English and French translations. The
-verse is shown in its place in the mushaf, and each word leads to its
-word-by-word translation, its root and the entry in al-Mufradāt or Lane.</p>
+<p>For each verse, tafsirs and translations in several languages (Arabic,
+French, English, Spanish, Italian, Dutch, German). Each word leads to its
+word-by-word translation, its root and the Illiyun Lexicon, with the other
+words of the same root.</p>
+
+<h2>Memorise</h2>
+<p>Mark each word known or difficult, test yourself with the text hidden,
+follow your progress verse by verse and come back to your difficulties.</p>
 
 <h2>Keep your place</h2>
-<p>Resume where you stopped, bookmark pages and verses, get a daily reminder.
-An account is optional: it only brings your settings and bookmarks to another
-phone.</p>
+<p>Resume where you stopped, colour bookmarks, a daily reminder, and share a
+verse as an image. An account is optional: it only brings your settings and
+progress to another phone.</p>
 
 {STAR}
 
@@ -187,18 +207,25 @@ explains how.</p>
 <p>مصحف المدينة برواية حفص، ومصحف مجمع الملك فهد برواية ورش، بترتيب كل صفحة
 كما هو في المطبوع. كل كلمة تستجيب للمس: لمسة تُبرزها، ولمستان تفتحان معناها،
 والضغط المطوّل يُبرز الآية كلها.</p>
-<p>ولراحة العين: خط كبير في ورش، وحبر أعرض، وتباين عالٍ، ووضع داكن، وألوان
-التجويد في حفص.</p>
+<p>ولراحة العين: تكبير بإصبعين أو بزر المكبّر، وخط كبير في ورش، وتباين عالٍ،
+ووضع داكن، وألوان التجويد في حفص، ووضع لعمى الألوان.</p>
+
+<h2>الاستماع</h2>
+<p>كبار القرّاء، آيةً آية أو متتابعًا، والصفحة تتبع التلاوة. تكرار مقطع للحفظ،
+وضبط السرعة، ومؤقّت للنوم، والتنزيل للاستماع دون اتصال.</p>
 
 <h2>الفهم</h2>
-<p>لكل آية تفسير تختاره (الميسر، والسعدي، وابن كثير، والمختصر بالفرنسية
-والإنجليزية)، مع ترجمات بالفرنسية والإنجليزية. تظهر الآية في موضعها من المصحف،
-وكل كلمة تقود إلى ترجمتها كلمةً كلمة، وإلى جذرها، وإلى مادتها في المفردات أو
-في معجم لين.</p>
+<p>لكل آية تفاسير وترجمات بعدة لغات (العربية والفرنسية والإنجليزية والإسبانية
+والإيطالية والهولندية والألمانية). وكل كلمة تقود إلى ترجمتها كلمةً كلمة، وإلى
+جذرها، وإلى معجم عِلِّيُّون مع سائر كلمات الجذر نفسه.</p>
+
+<h2>الحفظ</h2>
+<p>علِّم كل كلمة محفوظة أو صعبة، واختبر نفسك بإخفاء النص، وتابع تقدّمك آيةً آية،
+وارجع إلى مواضع الصعوبة.</p>
 
 <h2>متابعة القراءة</h2>
-<p>استئناف القراءة من حيث توقفت، وعلامات للصفحات والآيات، وتذكير يومي. الحساب
-اختياري، وفائدته الوحيدة أن تجد إعداداتك وعلاماتك على هاتف آخر.</p>
+<p>استئناف القراءة من حيث توقفت، وعلامات ملوّنة، وتذكير يومي، ومشاركة الآية
+كصورة. الحساب اختياري، وفائدته الوحيدة أن تجد إعداداتك وتقدّمك على هاتف آخر.</p>
 
 {STAR}
 
@@ -234,13 +261,19 @@ heure du rappel quotidien, suivi de la mémorisation (versets marqués, dates de
 révision). Ces données ne quittent pas l'appareil et
 disparaissent quand vous désinstallez l'app.</li>
 <li><strong>Téléchargements :</strong> l'app télécharge des fichiers (pages du
-mushaf Warsh, tafsirs, dictionnaire, polices du mushaf) depuis GitHub et Quran
-Foundation. Comme pour toute page web, ces services voient l'adresse IP de
+mushaf Warsh, tafsirs, dictionnaire, polices du mushaf, récitations audio)
+depuis GitHub, Quran Foundation et EveryAyah. Comme pour toute page web, ces services voient l'adresse IP de
 votre téléphone. Aucun identifiant n'est envoyé.</li>
 <li><strong>Recherche :</strong> le texte que vous cherchez est envoyé au serveur
 de recherche d'Illiyun, sans identifiant, pour trouver les versets.</li>
 <li><strong>Rappel quotidien :</strong> notification programmée sur le
 téléphone, sans serveur.</li>
+<li><strong>Rapports de plantage :</strong> si l'app plante ou rencontre une
+erreur, un rapport anonyme est envoyé à Sentry (hébergé dans l'Union
+européenne, Francfort) : l'erreur, le modèle et la version du téléphone, la
+version de l'app, la riwaya et la langue choisies. Il ne contient ni compte, ni
+e-mail, ni texte saisi, ni capture d'écran. Gardé 90 jours au plus. Vous pouvez
+le désactiver : Réglages → À propos → « Envoyer les rapports de plantage ».</li>
 <li><strong>Suivi de la récitation</strong> (si la fonction est disponible) : la
 voix est traitée par le service de reconnaissance vocale de votre téléphone
 (Google sur Android). Illiyun n'enregistre pas l'audio.</li>
@@ -305,13 +338,20 @@ sale of data.</p>
 reminder time, memorisation tracking (marked verses, review dates). This data never leaves the device and is removed when you
 uninstall the app.</li>
 <li><strong>Downloads:</strong> the app downloads files (Warsh mushaf pages,
-tafsirs, dictionary, mushaf fonts) from GitHub and Quran Foundation. As with any
+tafsirs, dictionary, mushaf fonts, audio recitations) from GitHub, Quran
+Foundation and EveryAyah. As with any
 web page, these services see your phone's IP address. No identifier is
 sent.</li>
 <li><strong>Search:</strong> the text you search for is sent to Illiyun's search
 server, without any identifier, to find the verses.</li>
 <li><strong>Daily reminder:</strong> a notification scheduled on the phone, with
 no server.</li>
+<li><strong>Crash reports:</strong> if the app crashes or hits an error, an
+anonymous report is sent to Sentry (hosted in the European Union, Frankfurt):
+the error, the phone model and system version, the app version, and the chosen
+riwaya and language. It contains no account, email, typed text or screenshot.
+Kept for 90 days at most. You can turn it off: Settings → About → “Send crash
+reports”.</li>
 <li><strong>Recitation follow-along</strong> (where available): your voice is
 processed by your phone's speech recognition service (Google on Android).
 Illiyun does not record the audio.</li>
@@ -372,11 +412,17 @@ date.</p>
 <li><strong>على هاتفك:</strong> الإعدادات، والعلامات، وآخر صفحة قرأتها، ووقت
 التذكير اليومي، ومتابعة الحفظ (الآيات المعلَّمة ومواعيد المراجعة). لا تغادر هذه المعطيات الجهاز، وتُمحى عند حذف التطبيق.</li>
 <li><strong>التنزيلات:</strong> ينزّل التطبيق ملفات (صفحات مصحف ورش، والتفاسير،
-والمعجم، وخطوط المصحف) من GitHub ومن Quran Foundation. وكما في أي صفحة ويب،
+والمعجم، وخطوط المصحف، والتلاوات الصوتية) من GitHub ومن Quran Foundation ومن
+EveryAyah. وكما في أي صفحة ويب،
 ترى هذه الخدمات عنوان IP لهاتفك. ولا يُرسَل أي مُعرِّف.</li>
 <li><strong>البحث:</strong> يُرسَل النص الذي تبحث عنه إلى خادم البحث الخاص
 بعِلِّيُّون، دون أي مُعرِّف، للعثور على الآيات.</li>
 <li><strong>التذكير اليومي:</strong> إشعار مبرمج على الهاتف نفسه، دون خادم.</li>
+<li><strong>تقارير الأعطال:</strong> إذا توقف التطبيق أو صادف خطأً، يُرسَل
+تقرير مجهول الهوية إلى Sentry (مستضاف في الاتحاد الأوروبي، فرانكفورت): الخطأ،
+وطراز الهاتف وإصدار نظامه، وإصدار التطبيق، والرواية واللغة المختارتان. ولا يحتوي
+على حساب ولا بريد إلكتروني ولا نص مكتوب ولا لقطة شاشة. ويُحفظ 90 يومًا على الأكثر.
+ويمكنك إيقافه: الإعدادات ← حول التطبيق ← «إرسال تقارير الأعطال».</li>
 <li><strong>متابعة التلاوة</strong> (إن كانت متاحة): يعالج صوتَك نظامُ التعرّف
 على الكلام في هاتفك (Google على أندرويد). ولا يسجّل عِلِّيُّون الصوت.</li>
 <li><strong>مدينة سماء الصفحة الرئيسية:</strong> تتبع السماء شمس مدينتك. وتُستنتج
@@ -573,13 +619,14 @@ def page(lang: str, slug: str, title: str, body: str, hero: str = "") -> str:
 <title>{full_title}</title>
 <meta name="description" content="{t['home_desc']}">
 <meta name="theme-color" content="#0b5d4b">
-<link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
 <header class="top">
 <div class="wrap">
-<a class="brand" href="index.html">{'عِلِّيُّون' if lang == 'ar' else 'Illiyun'}</a>
+<a class="brand" href="index.html"><img src="../assets/favicon.png" alt="" width="28" height="28">{'عِلِّيُّون' if lang == 'ar' else 'Illiyun'}</a>
 <ul class="langs">
 {langs}
 </ul>
@@ -620,6 +667,7 @@ def home(lang: str) -> str:
     )
     hero = f"""<section class="hero">
 <div class="wrap">
+<img class="hero-logo" src="../assets/logo.png" alt="" width="180" height="180">
 <p class="verse" lang="ar">{verse_html()}</p>
 <p class="verse-ref">{t['verse_ref']}</p>
 <h1>{h['h1']}</h1>

@@ -319,3 +319,20 @@ footer .credits {
     transition: none;
   }
 }
+
+/* Logo (pièce d'or, 2026-11-04) */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.brand img {
+  display: block;
+}
+.hero-logo {
+  display: block;
+  width: 132px;
+  height: 132px;
+  margin: 0 auto 0.5rem;
+  filter: drop-shadow(0 6px 18px rgba(0, 0, 0, 0.35));
+}
