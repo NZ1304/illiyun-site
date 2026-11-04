@@ -268,6 +268,13 @@ votre téléphone. Aucun identifiant n'est envoyé.</li>
 de recherche d'Illiyun, sans identifiant, pour trouver les versets.</li>
 <li><strong>Rappel quotidien :</strong> notification programmée sur le
 téléphone, sans serveur.</li>
+<li><strong>Lecteurs en ce moment :</strong> pour afficher combien de
+personnes lisent Illiyun, et combien sont sur la même page, l'app envoie toutes
+les minutes, tant qu'elle est ouverte, un identifiant tiré au hasard à chaque
+lancement (sans lien avec vous ni avec un compte), la riwaya et la page lue.
+Ces données sont hébergées par Supabase (Union européenne) et effacées quelques
+minutes après la fermeture de l'app ; aucun historique n'est gardé. Vous pouvez
+le désactiver : Réglages → Général → « Lecteurs en ce moment ».</li>
 <li><strong>Rapports de plantage :</strong> si l'app plante ou rencontre une
 erreur, un rapport anonyme est envoyé à Sentry (hébergé dans l'Union
 européenne, Francfort) : l'erreur, le modèle et la version du téléphone, la
@@ -346,6 +353,13 @@ sent.</li>
 server, without any identifier, to find the verses.</li>
 <li><strong>Daily reminder:</strong> a notification scheduled on the phone, with
 no server.</li>
+<li><strong>Readers right now:</strong> to show how many people are reading
+Illiyun, and how many are on the same page, the app sends every minute, while it
+is open, an identifier drawn at random at each launch (not linked to you or to
+an account), the riwaya and the page being read. This data is hosted by
+Supabase (European Union) and erased a few minutes after the app is closed; no
+history is kept. You can turn it off: Settings → General → “Readers right
+now”.</li>
 <li><strong>Crash reports:</strong> if the app crashes or hits an error, an
 anonymous report is sent to Sentry (hosted in the European Union, Frankfurt):
 the error, the phone model and system version, the app version, and the chosen
@@ -418,6 +432,11 @@ EveryAyah. وكما في أي صفحة ويب،
 <li><strong>البحث:</strong> يُرسَل النص الذي تبحث عنه إلى خادم البحث الخاص
 بعِلِّيُّون، دون أي مُعرِّف، للعثور على الآيات.</li>
 <li><strong>التذكير اليومي:</strong> إشعار مبرمج على الهاتف نفسه، دون خادم.</li>
+<li><strong>القرّاء الآن:</strong> لعرض عدد من يقرؤون في عِلِّيُّون ومن هم على
+الصفحة نفسها، يرسل التطبيق كل دقيقة، ما دام مفتوحًا، مُعرِّفًا عشوائيًا يتجدد مع
+كل تشغيل (لا صلة له بك ولا بحساب)، والرواية والصفحة المقروءة. وتُستضاف هذه
+المعطيات لدى Supabase (الاتحاد الأوروبي) وتُمحى بعد دقائق من إغلاق التطبيق، ولا
+يُحفظ أي سجل. ويمكنك إيقافه: الإعدادات ← عام ← «القرّاء الآن».</li>
 <li><strong>تقارير الأعطال:</strong> إذا توقف التطبيق أو صادف خطأً، يُرسَل
 تقرير مجهول الهوية إلى Sentry (مستضاف في الاتحاد الأوروبي، فرانكفورت): الخطأ،
 وطراز الهاتف وإصدار نظامه، وإصدار التطبيق، والرواية واللغة المختارتان. ولا يحتوي
