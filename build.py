@@ -24,9 +24,9 @@ CONTROLLER = {
 # Numéro de déclaration CNDP : None tant qu'il n'existe pas.
 CNDP_DECLARATION = None
 UPDATED = {
-    "fr": "4 novembre 2026",
-    "en": "4 November 2026",
-    "ar": "4 نوفمبر 2026",
+    "fr": "6 novembre 2026",
+    "en": "6 November 2026",
+    "ar": "6 نوفمبر 2026",
 }
 
 LANGS = ["fr", "ar", "en"]
@@ -275,6 +275,18 @@ lancement (sans lien avec vous ni avec un compte), la riwaya et la page lue.
 Ces données sont hébergées par Supabase (Union européenne) et effacées quelques
 minutes après la fermeture de l'app ; aucun historique n'est gardé. Vous pouvez
 le désactiver : Réglages → Général → « Lecteurs en ce moment ».</li>
+<li><strong>Statistiques anonymes :</strong> pour savoir comment l'app est
+utilisée et l'améliorer, elle envoie au plus une fois par heure des compteurs :
+pages lues, temps de lecture et d'écoute, sourates et récitateurs, recherches
+(leur nombre, jamais le texte cherché), fonctions utilisées, erreurs, et une
+fois par jour le thème, l'apparence, la langue, la version de l'app et le
+système (iOS ou Android). Avec eux part un identifiant d'appareil tiré au
+hasard, sans lien avec vous ni avec un compte, qui sert seulement à compter les
+appareils actifs et ceux qui reviennent. Rien sur vos signets, vos mots
+mémorisés ou votre compte. Hébergé par Supabase (Union européenne) ; les jours
+d'activité de l'identifiant sont effacés après 60 jours, l'identifiant après
+120 jours sans venue ; seuls des totaux par jour sont gardés. Vous pouvez le
+désactiver : Réglages → À propos → « Statistiques anonymes ».</li>
 <li><strong>Rapports de plantage :</strong> si l'app plante ou rencontre une
 erreur, un rapport anonyme est envoyé à Sentry (hébergé dans l'Union
 européenne, Francfort) : l'erreur, le modèle et la version du téléphone, la
@@ -360,6 +372,17 @@ an account), the riwaya and the page being read. This data is hosted by
 Supabase (European Union) and erased a few minutes after the app is closed; no
 history is kept. You can turn it off: Settings → General → “Readers right
 now”.</li>
+<li><strong>Anonymous statistics:</strong> to know how the app is used and
+improve it, it sends counters at most once an hour: pages read, reading and
+listening time, surahs and reciters, searches (how many, never what you
+searched for), features used, errors, and once a day the theme, appearance,
+language, app version and system (iOS or Android). With them goes a device
+identifier drawn at random, not linked to you or to an account, used only to
+count active and returning devices. Nothing about your bookmarks, memorized
+words or account. Hosted by Supabase (European Union); the identifier's active
+days are erased after 60 days, the identifier after 120 days without use; only
+daily totals are kept. You can turn it off: Settings → About → “Anonymous
+statistics”.</li>
 <li><strong>Crash reports:</strong> if the app crashes or hits an error, an
 anonymous report is sent to Sentry (hosted in the European Union, Frankfurt):
 the error, the phone model and system version, the app version, and the chosen
@@ -437,6 +460,15 @@ EveryAyah. وكما في أي صفحة ويب،
 كل تشغيل (لا صلة له بك ولا بحساب)، والرواية والصفحة المقروءة. وتُستضاف هذه
 المعطيات لدى Supabase (الاتحاد الأوروبي) وتُمحى بعد دقائق من إغلاق التطبيق، ولا
 يُحفظ أي سجل. ويمكنك إيقافه: الإعدادات ← عام ← «القرّاء الآن».</li>
+<li><strong>إحصاءات مجهولة:</strong> لمعرفة كيف يُستخدم التطبيق وتحسينه،
+يرسل مرة في الساعة على الأكثر عدّادات: الصفحات المقروءة، ومدة القراءة
+والاستماع، والسور والقرّاء، وعمليات البحث (عددها فقط، لا النص المبحوث عنه)،
+والميزات المستخدمة، والأخطاء، ومرة في اليوم المظهر والوضع واللغة وإصدار
+التطبيق والنظام (iOS أو Android). ويُرسَل معها مُعرِّف جهاز عشوائي لا صلة له بك
+ولا بحساب، لا يُستعمل إلا لعدّ الأجهزة النشطة والعائدة. ولا شيء عن علاماتك أو
+كلماتك المحفوظة أو حسابك. تُستضاف لدى Supabase (الاتحاد الأوروبي)؛ وتُمحى أيام
+نشاط المُعرِّف بعد 60 يومًا، والمُعرِّف بعد 120 يومًا دون استخدام، ولا تُحفظ إلا
+مجاميع يومية. ويمكنك إيقافها: الإعدادات ← حول ← «إحصاءات مجهولة».</li>
 <li><strong>تقارير الأعطال:</strong> إذا توقف التطبيق أو صادف خطأً، يُرسَل
 تقرير مجهول الهوية إلى Sentry (مستضاف في الاتحاد الأوروبي، فرانكفورت): الخطأ،
 وطراز الهاتف وإصدار نظامه، وإصدار التطبيق، والرواية واللغة المختارتان. ولا يحتوي
