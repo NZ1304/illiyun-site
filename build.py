@@ -563,7 +563,12 @@ arabe.</li>
 (<bdi class="path" lang="ar">الحساب</bdi>), touchez
 <span class="path">Delete my account</span>
 (<bdi class="path" lang="ar">حذف حسابي</bdi>).</li>
-<li>Confirmez. La suppression est immédiate.</li>
+<li>Pour confirmer, tapez l'adresse e-mail de votre compte, puis touchez
+<span class="path">Delete</span> (<bdi class="path" lang="ar">حذف</bdi>).</li>
+<li>La suppression est programmée dans <strong>30 jours</strong> : jusque-là,
+rien n'est effacé et vous pouvez l'annuler en vous reconnectant
+(<span class="path">Cancel deletion</span>). Ensuite, tout est effacé
+définitivement.</li>
 </ol>
 
 <h2>Sans l'application</h2>
@@ -592,7 +597,12 @@ pages read, your memorisation tracking and your notes. Nothing is kept.</p>
 <li>Open <span class="path">Settings</span>.</li>
 <li>In the <span class="path">Account</span> section, tap
 <span class="path">Delete my account</span>.</li>
-<li>Confirm. Deletion is immediate.</li>
+<li>To confirm, type your account's email address, then tap
+<span class="path">Delete</span>.</li>
+<li>Deletion is scheduled <strong>30 days</strong> later: until then nothing is
+erased and you can cancel it by signing in again
+(<span class="path">Cancel deletion</span>). After that, everything is erased
+for good.</li>
 </ol>
 
 <h2>Without the app</h2>
@@ -618,7 +628,11 @@ even without an account. They are removed when you uninstall the app.</p>
 <li>افتح <span class="path">الإعدادات</span>.</li>
 <li>في قسم <span class="path">الحساب</span>، المس
 <span class="path">حذف حسابي</span>.</li>
-<li>أكّد. يتم الحذف فورًا.</li>
+<li>للتأكيد، اكتب البريد الإلكتروني لحسابك ثم اضغط
+<bdi class="path" lang="ar">حذف</bdi>.</li>
+<li>يُبرمَج الحذف بعد <strong>30 يومًا</strong>: لا يُمحى شيء قبل ذلك، ويمكنك
+إلغاؤه بتسجيل الدخول من جديد (<bdi class="path" lang="ar">إلغاء الحذف</bdi>).
+وبعدها يُمحى كل شيء نهائيًا.</li>
 </ol>
 
 <h2>من غير التطبيق</h2>
