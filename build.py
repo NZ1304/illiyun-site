@@ -24,9 +24,9 @@ CONTROLLER = {
 # Numéro de déclaration CNDP : None tant qu'il n'existe pas.
 CNDP_DECLARATION = None
 UPDATED = {
-    "fr": "6 novembre 2026",
-    "en": "6 November 2026",
-    "ar": "6 نوفمبر 2026",
+    "fr": "13 novembre 2026",
+    "en": "13 November 2026",
+    "ar": "13 نوفمبر 2026",
 }
 
 LANGS = ["fr", "ar", "en"]
@@ -264,8 +264,8 @@ disparaissent quand vous désinstallez l'app.</li>
 mushaf Warsh, tafsirs, dictionnaire, polices du mushaf, récitations audio)
 depuis GitHub, Quran Foundation et EveryAyah. Comme pour toute page web, ces services voient l'adresse IP de
 votre téléphone. Aucun identifiant n'est envoyé.</li>
-<li><strong>Recherche :</strong> le texte que vous cherchez est envoyé au serveur
-de recherche d'Illiyun, sans identifiant, pour trouver les versets.</li>
+<li><strong>Recherche :</strong> la recherche dans le Coran se fait sur le
+téléphone ; le texte cherché n'est envoyé nulle part.</li>
 <li><strong>Rappel quotidien :</strong> notification programmée sur le
 téléphone, sans serveur.</li>
 <li><strong>Lecteurs en ce moment :</strong> pour afficher combien de
@@ -287,6 +287,11 @@ mémorisés ou votre compte. Hébergé par Supabase (Union européenne) ; les jo
 d'activité de l'identifiant sont effacés après 60 jours, l'identifiant après
 120 jours sans venue ; seuls des totaux par jour sont gardés. Vous pouvez le
 désactiver : Réglages → À propos → « Statistiques anonymes ».</li>
+<li><strong>Protection contre les abus :</strong> pour empêcher qu'un
+programme n'envoie en boucle de faux « lecteurs » ou de fausses statistiques,
+le serveur compte les envois par adresse IP. L'adresse elle-même n'est jamais
+enregistrée : seule une empreinte chiffrée et non réversible (avec une clé
+secrète) est gardée, au plus 2 heures, puis effacée.</li>
 <li><strong>Rapports de plantage :</strong> si l'app plante ou rencontre une
 erreur, un rapport anonyme est envoyé à Sentry (hébergé dans l'Union
 européenne, Francfort) : l'erreur, le modèle et la version du téléphone, la
@@ -310,9 +315,9 @@ autre téléphone. Il conserve :</p>
 <ul>
 <li>votre adresse e-mail, qui sert à vous connecter avec un code à usage
 unique (pas de mot de passe) ;</li>
-<li>vos réglages, vos signets, vos dernières pages lues et votre suivi de
-mémorisation (état des versets, dates de révision des pages), avec leur date de
-modification.</li>
+<li>vos réglages, vos signets, vos dernières pages lues, votre suivi de
+mémorisation (état des versets, dates de révision des pages) et vos notes
+personnelles sur les versets, avec leur date de modification.</li>
 </ul>
 <p>Ces données sont hébergées par Supabase, dans l'Union européenne (Francfort,
 Allemagne). Les codes de connexion sont envoyés par un service d'envoi
@@ -361,8 +366,8 @@ tafsirs, dictionary, mushaf fonts, audio recitations) from GitHub, Quran
 Foundation and EveryAyah. As with any
 web page, these services see your phone's IP address. No identifier is
 sent.</li>
-<li><strong>Search:</strong> the text you search for is sent to Illiyun's search
-server, without any identifier, to find the verses.</li>
+<li><strong>Search:</strong> searching the Quran happens on the phone; the text
+you search for is sent nowhere.</li>
 <li><strong>Daily reminder:</strong> a notification scheduled on the phone, with
 no server.</li>
 <li><strong>Readers right now:</strong> to show how many people are reading
@@ -383,6 +388,11 @@ words or account. Hosted by Supabase (European Union); the identifier's active
 days are erased after 60 days, the identifier after 120 days without use; only
 daily totals are kept. You can turn it off: Settings → About → “Anonymous
 statistics”.</li>
+<li><strong>Abuse protection:</strong> to stop a program from sending fake
+“readers” or fake statistics in a loop, the server counts requests per IP
+address. The address itself is never stored: only an encrypted, non-reversible
+fingerprint (made with a secret key) is kept, for 2 hours at most, then
+erased.</li>
 <li><strong>Crash reports:</strong> if the app crashes or hits an error, an
 anonymous report is sent to Sentry (hosted in the European Union, Frankfurt):
 the error, the phone model and system version, the app version, and the chosen
@@ -405,8 +415,9 @@ stores:</p>
 <ul>
 <li>your email address, used to sign in with a one-time code (no
 password);</li>
-<li>your settings, bookmarks, last pages read and memorisation tracking (verse
-states, page review dates), with the time they changed.</li>
+<li>your settings, bookmarks, last pages read, memorisation tracking (verse
+states, page review dates) and your personal notes on verses, with the time
+they changed.</li>
 </ul>
 <p>This data is hosted by Supabase in the European Union (Frankfurt, Germany).
 Sign-in codes are sent by an email delivery service. The data is kept while the
@@ -452,8 +463,8 @@ date.</p>
 والمعجم، وخطوط المصحف، والتلاوات الصوتية) من GitHub ومن Quran Foundation ومن
 EveryAyah. وكما في أي صفحة ويب،
 ترى هذه الخدمات عنوان IP لهاتفك. ولا يُرسَل أي مُعرِّف.</li>
-<li><strong>البحث:</strong> يُرسَل النص الذي تبحث عنه إلى خادم البحث الخاص
-بعِلِّيُّون، دون أي مُعرِّف، للعثور على الآيات.</li>
+<li><strong>البحث:</strong> يجري البحث في القرآن على الهاتف نفسه، ولا يُرسَل
+النص الذي تبحث عنه إلى أي جهة.</li>
 <li><strong>التذكير اليومي:</strong> إشعار مبرمج على الهاتف نفسه، دون خادم.</li>
 <li><strong>القرّاء الآن:</strong> لعرض عدد من يقرؤون في عِلِّيُّون ومن هم على
 الصفحة نفسها، يرسل التطبيق كل دقيقة، ما دام مفتوحًا، مُعرِّفًا عشوائيًا يتجدد مع
@@ -469,6 +480,10 @@ EveryAyah. وكما في أي صفحة ويب،
 كلماتك المحفوظة أو حسابك. تُستضاف لدى Supabase (الاتحاد الأوروبي)؛ وتُمحى أيام
 نشاط المُعرِّف بعد 60 يومًا، والمُعرِّف بعد 120 يومًا دون استخدام، ولا تُحفظ إلا
 مجاميع يومية. ويمكنك إيقافها: الإعدادات ← حول ← «إحصاءات مجهولة».</li>
+<li><strong>الحماية من إساءة الاستخدام:</strong> لمنع برنامج من إرسال «قرّاء»
+وهميين أو إحصاءات وهمية بشكل متكرر، يعدّ الخادم الطلبات الواردة من كل عنوان IP.
+ولا يُحفظ العنوان نفسه أبدًا: تُحفظ بصمة مشفّرة لا يمكن عكسها (بمفتاح سرّي) مدة
+ساعتين على الأكثر، ثم تُمحى.</li>
 <li><strong>تقارير الأعطال:</strong> إذا توقف التطبيق أو صادف خطأً، يُرسَل
 تقرير مجهول الهوية إلى Sentry (مستضاف في الاتحاد الأوروبي، فرانكفورت): الخطأ،
 وطراز الهاتف وإصدار نظامه، وإصدار التطبيق، والرواية واللغة المختارتان. ولا يحتوي
@@ -488,7 +503,7 @@ EveryAyah. وكما في أي صفحة ويب،
 <li>بريدك الإلكتروني، ويُستعمل للدخول برمز يُستعمل مرة واحدة (دون كلمة
 مرور)؛</li>
 <li>إعداداتك وعلاماتك وآخر صفحاتك ومتابعة حفظك (حالة الآيات ومواعيد مراجعة
-الصفحات)، مع تاريخ تعديلها.</li>
+الصفحات) وملاحظاتك الشخصية على الآيات، مع تاريخ تعديلها.</li>
 </ul>
 <p>تُستضاف هذه المعطيات لدى Supabase في الاتحاد الأوروبي (فرانكفورت، ألمانيا).
 وتُرسَل رموز الدخول عبر خدمة لإرسال البريد. وتُحفظ ما دام الحساب قائمًا، وتُمحى
@@ -524,7 +539,8 @@ def delete_account(lang: str) -> tuple[str, str]:
 
 <p>Le compte Illiyun est facultatif. Le supprimer efface définitivement, sur nos
 serveurs : votre adresse e-mail, vos réglages synchronisés, vos signets, vos
-dernières pages lues et votre suivi de mémorisation. Rien n'est conservé.</p>
+dernières pages lues, votre suivi de mémorisation et vos notes. Rien n'est
+conservé.</p>
 
 <h2>Depuis l'application</h2>
 <ol>
@@ -557,7 +573,7 @@ l'application.</p>
 
 <p>An Illiyun account is optional. Deleting it permanently erases, on our
 servers: your email address, your synced settings, your bookmarks, your last
-pages read and your memorisation tracking. Nothing is kept.</p>
+pages read, your memorisation tracking and your notes. Nothing is kept.</p>
 
 <h2>From the app</h2>
 <ol>
@@ -583,7 +599,7 @@ even without an account. They are removed when you uninstall the app.</p>
 <p class="updated">آخر تحديث: {UPDATED['ar']}</p>
 
 <p>الحساب في عِلِّيُّون اختياري. وحذفه يمحو نهائيًا من خوادمنا: بريدك الإلكتروني،
-وإعداداتك المتزامنة، وعلاماتك، وآخر صفحاتك، ومتابعة حفظك. ولا يُحتفظ بشيء.</p>
+وإعداداتك المتزامنة، وعلاماتك، وآخر صفحاتك، ومتابعة حفظك، وملاحظاتك. ولا يُحتفظ بشيء.</p>
 
 <h2>من التطبيق</h2>
 <ol>

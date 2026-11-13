@@ -26,7 +26,7 @@
 <div class="wrap">
 
 <h1 class="page-title">Politique de confidentialité</h1>
-<p class="updated">Mise à jour : 6 novembre 2026</p>
+<p class="updated">Mise à jour : 13 novembre 2026</p>
 
 <h2>En bref</h2>
 <p>Illiyun fonctionne sans compte. Sans compte, vos réglages, vos signets et vos
@@ -43,8 +43,8 @@ disparaissent quand vous désinstallez l'app.</li>
 mushaf Warsh, tafsirs, dictionnaire, polices du mushaf, récitations audio)
 depuis GitHub, Quran Foundation et EveryAyah. Comme pour toute page web, ces services voient l'adresse IP de
 votre téléphone. Aucun identifiant n'est envoyé.</li>
-<li><strong>Recherche :</strong> le texte que vous cherchez est envoyé au serveur
-de recherche d'Illiyun, sans identifiant, pour trouver les versets.</li>
+<li><strong>Recherche :</strong> la recherche dans le Coran se fait sur le
+téléphone ; le texte cherché n'est envoyé nulle part.</li>
 <li><strong>Rappel quotidien :</strong> notification programmée sur le
 téléphone, sans serveur.</li>
 <li><strong>Lecteurs en ce moment :</strong> pour afficher combien de
@@ -66,6 +66,11 @@ mémorisés ou votre compte. Hébergé par Supabase (Union européenne) ; les jo
 d'activité de l'identifiant sont effacés après 60 jours, l'identifiant après
 120 jours sans venue ; seuls des totaux par jour sont gardés. Vous pouvez le
 désactiver : Réglages → À propos → « Statistiques anonymes ».</li>
+<li><strong>Protection contre les abus :</strong> pour empêcher qu'un
+programme n'envoie en boucle de faux « lecteurs » ou de fausses statistiques,
+le serveur compte les envois par adresse IP. L'adresse elle-même n'est jamais
+enregistrée : seule une empreinte chiffrée et non réversible (avec une clé
+secrète) est gardée, au plus 2 heures, puis effacée.</li>
 <li><strong>Rapports de plantage :</strong> si l'app plante ou rencontre une
 erreur, un rapport anonyme est envoyé à Sentry (hébergé dans l'Union
 européenne, Francfort) : l'erreur, le modèle et la version du téléphone, la
@@ -89,9 +94,9 @@ autre téléphone. Il conserve :</p>
 <ul>
 <li>votre adresse e-mail, qui sert à vous connecter avec un code à usage
 unique (pas de mot de passe) ;</li>
-<li>vos réglages, vos signets, vos dernières pages lues et votre suivi de
-mémorisation (état des versets, dates de révision des pages), avec leur date de
-modification.</li>
+<li>vos réglages, vos signets, vos dernières pages lues, votre suivi de
+mémorisation (état des versets, dates de révision des pages) et vos notes
+personnelles sur les versets, avec leur date de modification.</li>
 </ul>
 <p>Ces données sont hébergées par Supabase, dans l'Union européenne (Francfort,
 Allemagne). Les codes de connexion sont envoyés par un service d'envoi

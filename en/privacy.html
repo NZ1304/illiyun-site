@@ -26,7 +26,7 @@
 <div class="wrap">
 
 <h1 class="page-title">Privacy policy</h1>
-<p class="updated">Updated: 6 November 2026</p>
+<p class="updated">Updated: 13 November 2026</p>
 
 <h2>In short</h2>
 <p>Illiyun works without an account. Without one, your settings, bookmarks and
@@ -43,8 +43,8 @@ tafsirs, dictionary, mushaf fonts, audio recitations) from GitHub, Quran
 Foundation and EveryAyah. As with any
 web page, these services see your phone's IP address. No identifier is
 sent.</li>
-<li><strong>Search:</strong> the text you search for is sent to Illiyun's search
-server, without any identifier, to find the verses.</li>
+<li><strong>Search:</strong> searching the Quran happens on the phone; the text
+you search for is sent nowhere.</li>
 <li><strong>Daily reminder:</strong> a notification scheduled on the phone, with
 no server.</li>
 <li><strong>Readers right now:</strong> to show how many people are reading
@@ -65,6 +65,11 @@ words or account. Hosted by Supabase (European Union); the identifier's active
 days are erased after 60 days, the identifier after 120 days without use; only
 daily totals are kept. You can turn it off: Settings → About → “Anonymous
 statistics”.</li>
+<li><strong>Abuse protection:</strong> to stop a program from sending fake
+“readers” or fake statistics in a loop, the server counts requests per IP
+address. The address itself is never stored: only an encrypted, non-reversible
+fingerprint (made with a secret key) is kept, for 2 hours at most, then
+erased.</li>
 <li><strong>Crash reports:</strong> if the app crashes or hits an error, an
 anonymous report is sent to Sentry (hosted in the European Union, Frankfurt):
 the error, the phone model and system version, the app version, and the chosen
@@ -87,8 +92,9 @@ stores:</p>
 <ul>
 <li>your email address, used to sign in with a one-time code (no
 password);</li>
-<li>your settings, bookmarks, last pages read and memorisation tracking (verse
-states, page review dates), with the time they changed.</li>
+<li>your settings, bookmarks, last pages read, memorisation tracking (verse
+states, page review dates) and your personal notes on verses, with the time
+they changed.</li>
 </ul>
 <p>This data is hosted by Supabase in the European Union (Frankfurt, Germany).
 Sign-in codes are sent by an email delivery service. The data is kept while the
