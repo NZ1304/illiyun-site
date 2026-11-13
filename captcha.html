@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Illiyun</title>
+<style>
+html, body { margin: 0; padding: 0; background: transparent; }
+body { display: flex; justify-content: center; align-items: center; min-height: 72px; }
+#w { width: 100%; max-width: 360px; }
+</style>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search);
+  var LANGS = ["ar", "fr", "en", "es", "it", "nl", "de"];
+  var lang = LANGS.indexOf(q.get("lang")) >= 0 ? q.get("lang") : "auto";
+  var theme = q.get("theme") === "dark" ? "dark" : q.get("theme") === "light" ? "light" : "auto";
+  function send(m) {
+    if (window.ReactNativeWebView) window.ReactNativeWebView.postMessage(JSON.stringify(m));
+  }
+  window.onTurnstile = function () {
+    turnstile.render("#w", {
+      sitekey: "0x4AAAAAAF_9woeiSgPrcGGb",
+      language: lang,
+      theme: theme,
+      size: "flexible",
+      callback: function (t) { send({ type: "token", token: t }); },
+      "expired-callback": function () { send({ type: "expired" }); },
+      "error-callback": function (code) { send({ type: "error", code: String(code) }); },
+    });
+    send({ type: "ready" });
+  };
+})();
+</script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onTurnstile&render=explicit" async defer></script>
+</head>
+<body><div id="w"></div></body>
+</html>

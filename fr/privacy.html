@@ -100,7 +100,10 @@ personnelles sur les versets, avec leur date de modification.</li>
 </ul>
 <p>Ces données sont hébergées par Supabase, dans l'Union européenne (Francfort,
 Allemagne). Les codes de connexion sont envoyés par un service d'envoi
-d'e-mails. Elles sont gardées tant que le compte existe et effacées à sa
+d'e-mails. Avant l'envoi du code, une vérification anti-robots de Cloudflare
+(Turnstile) s'affiche : elle voit l'adresse IP et des informations techniques
+du téléphone le temps de la vérification, sans cookie publicitaire ni
+suivi. Elles sont gardées tant que le compte existe et effacées à sa
 suppression.</p>
 
 <h2>Vos droits</h2>

@@ -13,6 +13,10 @@ ROOT = Path(__file__).parent
 
 # ── Réglages ─────────────────────────────────────────────────────────────
 CONTACT_EMAIL = "contact@illiyun.app"
+# Clé publique du widget Cloudflare Turnstile « Illiyun » (CAPTCHA de la
+# connexion dans l'app ; widget limité au domaine illiyun.app). Publique par
+# nature ; la clé secrète est dans Supabase, jamais ici.
+TURNSTILE_SITE_KEY = "0x4AAAAAAF_9woeiSgPrcGGb"
 # Lien Google Play : None tant que l'app n'est pas publiée.
 PLAY_URL = None
 # Responsable du traitement (loi 09-08) : à compléter (nom, ville).
@@ -321,7 +325,10 @@ personnelles sur les versets, avec leur date de modification.</li>
 </ul>
 <p>Ces données sont hébergées par Supabase, dans l'Union européenne (Francfort,
 Allemagne). Les codes de connexion sont envoyés par un service d'envoi
-d'e-mails. Elles sont gardées tant que le compte existe et effacées à sa
+d'e-mails. Avant l'envoi du code, une vérification anti-robots de Cloudflare
+(Turnstile) s'affiche : elle voit l'adresse IP et des informations techniques
+du téléphone le temps de la vérification, sans cookie publicitaire ni
+suivi. Elles sont gardées tant que le compte existe et effacées à sa
 suppression.</p>
 
 <h2>Vos droits</h2>
@@ -420,7 +427,10 @@ states, page review dates) and your personal notes on verses, with the time
 they changed.</li>
 </ul>
 <p>This data is hosted by Supabase in the European Union (Frankfurt, Germany).
-Sign-in codes are sent by an email delivery service. The data is kept while the
+Sign-in codes are sent by an email delivery service. Before the code is
+sent, a Cloudflare anti-bot check (Turnstile) is shown: it sees the IP address
+and technical information about the phone during the check, with no
+advertising cookie or tracking. The data is kept while the
 account exists and erased when it is deleted.</p>
 
 <h2>Your rights</h2>
@@ -506,7 +516,9 @@ EveryAyah. وكما في أي صفحة ويب،
 الصفحات) وملاحظاتك الشخصية على الآيات، مع تاريخ تعديلها.</li>
 </ul>
 <p>تُستضاف هذه المعطيات لدى Supabase في الاتحاد الأوروبي (فرانكفورت، ألمانيا).
-وتُرسَل رموز الدخول عبر خدمة لإرسال البريد. وتُحفظ ما دام الحساب قائمًا، وتُمحى
+وتُرسَل رموز الدخول عبر خدمة لإرسال البريد. وقبل إرسال الرمز يظهر تحقق من
+Cloudflare ‏(Turnstile) للتمييز بين الإنسان والبرامج الآلية: يرى عنوان IP
+ومعلومات تقنية عن الهاتف أثناء التحقق فقط، دون ملفات تعريف إعلانية ولا تتبّع. وتُحفظ ما دام الحساب قائمًا، وتُمحى
 عند حذفه.</p>
 
 <h2>حقوقك</h2>
@@ -772,6 +784,57 @@ def root_index() -> str:
 """
 
 
+def captcha_page() -> str:
+    """Page du CAPTCHA, ouverte par l'app (WebView) pendant la connexion.
+
+    Turnstile n'accepte que les pages du domaine déclaré (illiyun.app) : la
+    page est donc servie par ce site. Elle renvoie le jeton à l'app par
+    ReactNativeWebView.postMessage ; l'app l'envoie à Supabase avec la
+    demande de code. Paramètres : ?lang=fr|ar|en|es|it|nl|de&theme=light|dark.
+    Aucun cookie, aucune mesure ; rien n'est gardé.
+    """
+    return f"""<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Illiyun</title>
+<style>
+html, body {{ margin: 0; padding: 0; background: transparent; }}
+body {{ display: flex; justify-content: center; align-items: center; min-height: 72px; }}
+#w {{ width: 100%; max-width: 360px; }}
+</style>
+<script>
+(function () {{
+  var q = new URLSearchParams(location.search);
+  var LANGS = ["ar", "fr", "en", "es", "it", "nl", "de"];
+  var lang = LANGS.indexOf(q.get("lang")) >= 0 ? q.get("lang") : "auto";
+  var theme = q.get("theme") === "dark" ? "dark" : q.get("theme") === "light" ? "light" : "auto";
+  function send(m) {{
+    if (window.ReactNativeWebView) window.ReactNativeWebView.postMessage(JSON.stringify(m));
+  }}
+  window.onTurnstile = function () {{
+    turnstile.render("#w", {{
+      sitekey: "{TURNSTILE_SITE_KEY}",
+      language: lang,
+      theme: theme,
+      size: "flexible",
+      callback: function (t) {{ send({{ type: "token", token: t }}); }},
+      "expired-callback": function () {{ send({{ type: "expired" }}); }},
+      "error-callback": function (code) {{ send({{ type: "error", code: String(code) }}); }},
+    }});
+    send({{ type: "ready" }});
+  }};
+}})();
+</script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onTurnstile&render=explicit" async defer></script>
+</head>
+<body><div id="w"></div></body>
+</html>
+"""
+
+
 def main() -> None:
     for lang in LANGS:
         out = ROOT / lang
@@ -785,6 +848,7 @@ def main() -> None:
             title, body = fn(lang)
             (out / slug).write_text(page(lang, slug, title, body), encoding="utf-8")
     (ROOT / "index.html").write_text(root_index(), encoding="utf-8")
+    (ROOT / "captcha.html").write_text(captcha_page(), encoding="utf-8")
     print("Site généré :", ", ".join(LANGS))
 
 
