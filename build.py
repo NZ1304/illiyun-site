@@ -28,9 +28,9 @@ CONTROLLER = {
 # Numéro de déclaration CNDP : None tant qu'il n'existe pas.
 CNDP_DECLARATION = None
 UPDATED = {
-    "fr": "13 novembre 2026",
-    "en": "13 November 2026",
-    "ar": "13 نوفمبر 2026",
+    "fr": "18 novembre 2026",
+    "en": "18 November 2026",
+    "ar": "18 نوفمبر 2026",
 }
 
 LANGS = ["fr", "ar", "en"]
@@ -319,6 +319,8 @@ autre téléphone. Il conserve :</p>
 <ul>
 <li>votre adresse e-mail, qui sert à vous connecter avec un code à usage
 unique (pas de mot de passe) ;</li>
+<li>le nom que vous avez choisi pour la salutation de l'accueil, si vous en
+avez saisi un (facultatif) ;</li>
 <li>vos réglages, vos signets, vos dernières pages lues, votre suivi de
 mémorisation (état des versets, dates de révision des pages) et vos notes
 personnelles sur les versets, avec leur date de modification.</li>
@@ -422,6 +424,8 @@ stores:</p>
 <ul>
 <li>your email address, used to sign in with a one-time code (no
 password);</li>
+<li>the name you chose for the home screen greeting, if you entered one
+(optional);</li>
 <li>your settings, bookmarks, last pages read, memorisation tracking (verse
 states, page review dates) and your personal notes on verses, with the time
 they changed.</li>
@@ -512,6 +516,7 @@ EveryAyah. وكما في أي صفحة ويب،
 <ul>
 <li>بريدك الإلكتروني، ويُستعمل للدخول برمز يُستعمل مرة واحدة (دون كلمة
 مرور)؛</li>
+<li>الاسم الذي اخترته لتحية الصفحة الرئيسية، إن كتبت اسمًا (اختياري)؛</li>
 <li>إعداداتك وعلاماتك وآخر صفحاتك ومتابعة حفظك (حالة الآيات ومواعيد مراجعة
 الصفحات) وملاحظاتك الشخصية على الآيات، مع تاريخ تعديلها.</li>
 </ul>
@@ -550,7 +555,7 @@ def delete_account(lang: str) -> tuple[str, str]:
 <p class="updated">Mise à jour : {UPDATED['fr']}</p>
 
 <p>Le compte Illiyun est facultatif. Le supprimer efface définitivement, sur nos
-serveurs : votre adresse e-mail, vos réglages synchronisés, vos signets, vos
+serveurs : votre adresse e-mail, votre nom (s'il a été saisi), vos réglages synchronisés, vos signets, vos
 dernières pages lues, votre suivi de mémorisation et vos notes. Rien n'est
 conservé.</p>
 
@@ -589,7 +594,7 @@ l'application.</p>
 <p class="updated">Updated: {UPDATED['en']}</p>
 
 <p>An Illiyun account is optional. Deleting it permanently erases, on our
-servers: your email address, your synced settings, your bookmarks, your last
+servers: your email address, your name (if entered), your synced settings, your bookmarks, your last
 pages read, your memorisation tracking and your notes. Nothing is kept.</p>
 
 <h2>From the app</h2>
@@ -621,7 +626,7 @@ even without an account. They are removed when you uninstall the app.</p>
 <p class="updated">آخر تحديث: {UPDATED['ar']}</p>
 
 <p>الحساب في عِلِّيُّون اختياري. وحذفه يمحو نهائيًا من خوادمنا: بريدك الإلكتروني،
-وإعداداتك المتزامنة، وعلاماتك، وآخر صفحاتك، ومتابعة حفظك، وملاحظاتك. ولا يُحتفظ بشيء.</p>
+واسمك (إن كتبته)، وإعداداتك المتزامنة، وعلاماتك، وآخر صفحاتك، ومتابعة حفظك، وملاحظاتك. ولا يُحتفظ بشيء.</p>
 
 <h2>من التطبيق</h2>
 <ol>
