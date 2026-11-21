@@ -28,9 +28,9 @@ CONTROLLER = {
 # Numéro de déclaration CNDP : None tant qu'il n'existe pas.
 CNDP_DECLARATION = None
 UPDATED = {
-    "fr": "18 novembre 2026",
-    "en": "18 November 2026",
-    "ar": "18 نوفمبر 2026",
+    "fr": "21 novembre 2026",
+    "en": "21 November 2026",
+    "ar": "21 نوفمبر 2026",
 }
 
 LANGS = ["fr", "ar", "en"]
@@ -314,7 +314,7 @@ téléphone ; la position n'est envoyée nulle part.</li>
 </ul>
 
 <h2>Avec un compte (facultatif)</h2>
-<p>Le compte sert uniquement à retrouver vos réglages et vos signets sur un
+<p>Le compte sert à retrouver vos réglages et vos signets sur un
 autre téléphone. Il conserve :</p>
 <ul>
 <li>votre adresse e-mail, qui sert à vous connecter avec un code à usage
@@ -325,6 +325,14 @@ avez saisi un (facultatif) ;</li>
 mémorisation (état des versets, dates de révision des pages) et vos notes
 personnelles sur les versets, avec leur date de modification.</li>
 </ul>
+<p>Mots difficiles : chaque nuit, les marques de mémorisation des comptes
+(mots marqués sus ou difficiles) sont additionnées pour repérer les mots que
+beaucoup de mémorisateurs ont du mal à retenir. Seul le résultat est gardé :
+pour chaque mot, le nombre de comptes et la part de marques « difficile ». Un
+mot n'apparaît que si au moins 10 comptes l'ont marqué ; il est impossible
+d'y retrouver les marques d'une personne. Ce résultat pourra être affiché à
+tous les utilisateurs de l'app. Les marques des téléphones sans compte ne
+sont jamais envoyées.</p>
 <p>Ces données sont hébergées par Supabase, dans l'Union européenne (Francfort,
 Allemagne). Les codes de connexion sont envoyés par un service d'envoi
 d'e-mails. Avant l'envoi du code, une vérification anti-robots de Cloudflare
@@ -419,7 +427,7 @@ is kept, on the phone; the position is sent nowhere.</li>
 </ul>
 
 <h2>With an account (optional)</h2>
-<p>The account only brings your settings and bookmarks to another phone. It
+<p>The account brings your settings and bookmarks to another phone. It
 stores:</p>
 <ul>
 <li>your email address, used to sign in with a one-time code (no
@@ -430,6 +438,13 @@ password);</li>
 states, page review dates) and your personal notes on verses, with the time
 they changed.</li>
 </ul>
+<p>Difficult words: every night, the memorisation marks of accounts (words
+marked known or difficult) are added up to find the words many memorisers
+find hard to retain. Only the result is kept: for each word, the number of
+accounts and the share of « difficult » marks. A word only appears once at
+least 10 accounts have marked it; no one's own marks can be found in it. This
+result may be shown to every user of the app. Marks on phones without an
+account are never sent.</p>
 <p>This data is hosted by Supabase in the European Union (Frankfurt, Germany).
 Sign-in codes are sent by an email delivery service. Before the code is
 sent, a Cloudflare anti-bot check (Turnstile) is shown: it sees the IP address
@@ -512,7 +527,7 @@ EveryAyah. وكما في أي صفحة ويب،
 </ul>
 
 <h2>مع حساب (اختياري)</h2>
-<p>فائدة الحساب الوحيدة أن تجد إعداداتك وعلاماتك على هاتف آخر. وهو يحفظ:</p>
+<p>يُتيح لك الحساب أن تجد إعداداتك وعلاماتك على هاتف آخر. وهو يحفظ:</p>
 <ul>
 <li>بريدك الإلكتروني، ويُستعمل للدخول برمز يُستعمل مرة واحدة (دون كلمة
 مرور)؛</li>
@@ -520,6 +535,12 @@ EveryAyah. وكما في أي صفحة ويب،
 <li>إعداداتك وعلاماتك وآخر صفحاتك ومتابعة حفظك (حالة الآيات ومواعيد مراجعة
 الصفحات) وملاحظاتك الشخصية على الآيات، مع تاريخ تعديلها.</li>
 </ul>
+<p>الكلمات الصعبة: كل ليلة تُجمَع علامات الحفظ في الحسابات (الكلمات المعلَّمة
+محفوظةً أو صعبةً) لمعرفة الكلمات التي يجد كثير من الحفّاظ صعوبة في حفظها. ولا
+يُحفظ إلا النتيجة: لكل كلمة عدد الحسابات ونسبة علامات «صعبة». ولا تظهر كلمة
+إلا إذا علَّمها 10 حسابات على الأقل، ولا يمكن أن يُعرف منها ما علَّمه شخص
+بعينه. وقد تُعرَض هذه النتيجة على جميع مستخدمي التطبيق. أما علامات الهواتف
+التي ليس فيها حساب فلا تُرسَل أبدًا.</p>
 <p>تُستضاف هذه المعطيات لدى Supabase في الاتحاد الأوروبي (فرانكفورت، ألمانيا).
 وتُرسَل رموز الدخول عبر خدمة لإرسال البريد. وقبل إرسال الرمز يظهر تحقق من
 Cloudflare ‏(Turnstile) للتمييز بين الإنسان والبرامج الآلية: يرى عنوان IP
